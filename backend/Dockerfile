@@ -6,7 +6,7 @@ COPY ./data /app/data
 #COPY ./models /app/models
 
 #RUN pip install rasa==2.8.15
-RUN pip install gunicorn==20.1.0
+#RUN pip install gunicorn==20.1.0
 RUN  rasa train
 
 VOLUME /app
